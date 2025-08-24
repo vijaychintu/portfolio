@@ -1,0 +1,83 @@
+export default function Portfolio() {
+  return (
+    <div className="bg-gray-50 min-h-screen text-gray-800">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <h1 className="text-4xl font-bold mb-4">Agurla Vijay Kumar</h1>
+        <p className="text-lg max-w-2xl text-center">
+          Aspiring DevOps Engineer | AWS | Terraform | Kubernetes | CI/CD | Cloud-Native Solutions
+        </p>
+        <div className="mt-6 flex space-x-4">
+          <a href="https://github.com/vijaychintu" target="_blank" className="bg-white text-blue-600 px-4 py-2 rounded-xl font-semibold shadow">GitHub</a>
+          <a href="https://www.linkedin.com/in/agurla-vijay-kumar-998873263" target="_blank" className="bg-white text-blue-600 px-4 py-2 rounded-xl font-semibold shadow">LinkedIn</a>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4 text-blue-600">About Me</h2>
+        <p>
+          Aspiring DevOps Engineer with hands-on experience in AWS, Terraform, and Kubernetes. Skilled in building automated, scalable, and secure cloud solutions. Passionate about improving deployment workflows and enhancing system reliability.
+        </p>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-16 px-6 bg-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-blue-600 text-center">Technical Skills</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+          <div>AWS (EC2, VPC, RDS, ALB, IAM)</div>
+          <div>Terraform, Ansible</div>
+          <div>Jenkins, GitHub Actions</div>
+          <div>Docker, Kubernetes, Helm</div>
+          <div>Prometheus, Grafana</div>
+          <div>Git, GitHub</div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-2xl font-bold mb-6 text-blue-600 text-center">Projects</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="p-6 bg-white rounded-2xl shadow">
+            <h3 className="font-semibold text-lg mb-2">AWS 3-Tier Architecture with Terraform</h3>
+            <p>Designed & deployed a 3-tier architecture (VPC, ALB, EC2, RDS) on AWS with Terraform automation and auto-scaling.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl shadow">
+            <h3 className="font-semibold text-lg mb-2">Cloud-Native Monitoring App</h3>
+            <p>Monitoring platform using Kubernetes, Prometheus & Grafana with Helm & Terraform for scalability and observability.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl shadow">
+            <h3 className="font-semibold text-lg mb-2">Learning Management System (LMS)</h3>
+            <p>Cloud-based LMS with REST APIs deployed on Docker & Kubernetes. CI/CD with GitHub Actions & Terraform.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl shadow">
+            <h3 className="font-semibold text-lg mb-2">DevSecOps Pipeline</h3>
+            <p>Built secure CI/CD pipelines integrating Jenkins, GitHub Actions, SonarQube, Trivy, and Snyk for security scanning.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="py-16 px-6 bg-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-blue-600 text-center">Certifications</h2>
+        <ul className="list-disc list-inside max-w-xl mx-auto space-y-2">
+          <li>DevOps on AWS: Code, Build, and Test (edX)</li>
+          <li>DevOps on AWS: Release and Deploy (edX)</li>
+          <li>DevOps on AWS: Operate and Monitor (edX)</li>
+          <li>AWS Cloud Practitioner Essentials (AWS)</li>
+          <li>AWS Cloud Technical Essentials (AWS)</li>
+        </ul>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 px-6 max-w-3xl mx-auto text-center">
+        <h2 className="text-2xl font-bold mb-4 text-blue-600">Contact</h2>
+        <p>If you'd like to collaborate or have an opportunity, feel free to reach out!</p>
+        <p className="mt-4">📧 agurlavijaykumar21@gmail.com</p>
+        <p>📍 Hyderabad, Telangana, India</p>
+      </section>
+
+      <footer className="py-6 text-center bg-gray-200 text-sm">© 2025 Agurla Vijay Kumar</footer>
+    </div>
+  );
+}
